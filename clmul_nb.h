@@ -23,7 +23,7 @@
 extern "C" {
 #endif
 
-unsigned int clmul_nb(unsigned int first_polynomial, unsigned int second_polynomial);
+    unsigned int clmul_nb(unsigned int first_polynomial, unsigned int second_polynomial);
 
 #ifdef __cplusplus
 }
