@@ -19,7 +19,7 @@ unsigned int clmul_nb(unsigned int first_polynomial, unsigned int second_polynom
     // Shift the second and first polinomials.
     // Check the lowest bit on the first polinomial. Multiply the second polynomial by this bit.
     // Store resulting value (shifted second polynomial or 0) in accumulator via XOR.
-    // Repeat for bits 0 through 6 of first polynomial.
+    // Repeat for bits 1 through 7 of first polynomial.
     for(int i = 0; i < 8; i++) {
         accumulator ^= ((second_polynomial << i) * ((first_polynomial >> i ) & 0x1));
     }
