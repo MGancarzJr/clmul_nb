@@ -8,7 +8,7 @@
 
 #include "clmul_nb.h"
 
-unsigned int clmul(unsigned int first_polynomial, unsigned int second_polynomial) {
+unsigned int clmul_nb(unsigned int first_polynomial, unsigned int second_polynomial) {
     // Sanitize the inputs.
     first_polynomial &= 0xff;
     second_polynomial &= 0xff;
