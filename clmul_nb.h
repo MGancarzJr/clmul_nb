@@ -19,6 +19,14 @@
 #ifndef CLMUL_NB_H_
 #define CLMUL_NB_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 unsigned int clmul_nb(unsigned int first_polynomial, unsigned int second_polynomial);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
